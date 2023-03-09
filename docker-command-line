@@ -38,4 +38,16 @@
    55  docker run -d nginx
    55  docker run -d nginx
    56  docker ps
-
+####start stop remove a container
+ 2  docker ps
+    3  docker container stop thirsty_carver
+    4  docker ps
+    5  docker ps -a
+    6  docker container start thirsty_carver
+    7  docker rm 3d42
+    9  docker stop 3d42
+   10  docker rm 3d42
+   11  docker container prune
+   12  docker ps
+   13  docker exec -it d5c0 bash
+   exit
