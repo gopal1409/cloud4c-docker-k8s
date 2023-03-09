@@ -28,4 +28,14 @@
    45  docker network ls
    46  docker network inspect bridge
 
+###expose port
+ 49  docker ps
+   50  docker run -p 84:80 -d nginx
+   51  docker ps
+   52  docker run -p 84:80 -d nginx
+   53  docker ps
+   54  docker ps -a
+   55  docker run -d nginx
+   55  docker run -d nginx
+   56  docker ps
 
