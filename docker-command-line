@@ -13,3 +13,13 @@
    29  curl localhost:80
    ###container run as a process
    docker container run --publish 83:80 nginx
+   
+   ###container vs process
+    34  docker run --name mongo -d mongo
+   35  docker ps
+   36  docker top mongo
+   37  ps aux
+   38  kill -9 4552
+   39  docker ps
+   40  docker ps -a
+
