@@ -22,4 +22,10 @@
    38  kill -9 4552
    39  docker ps
    40  docker ps -a
+   ####docker networking
+    43  docker ps
+   44  ip a
+   45  docker network ls
+   46  docker network inspect bridge
+
 
