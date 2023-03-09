@@ -1,0 +1,13 @@
+###creating custom image using docker file
+ 1  apt install default-jdk
+    2  apt install maven
+    3  git clone https://github.com/gopal1409/chat-app-sapient.git
+    4  git clone https://github.com/gopal1409/springtomcatchatapp.git
+    5  cd springtomcatchatapp/
+    6  mvn clean package
+    7  ls
+    8  cd target/
+    9  ls
+   10  java -jar websocket-demo-0.0.1-SNAPSHOT.jar
+
+####open port 8090 to access the app outside
