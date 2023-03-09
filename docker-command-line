@@ -11,3 +11,5 @@
 27  curl localhost:82
    28  curl localhost:81
    29  curl localhost:80
+   ###container run as a process
+   docker container run --publish 83:80 nginx
