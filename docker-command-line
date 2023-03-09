@@ -3,3 +3,7 @@
    14  docker container run --publish 81:80 --detach nginx
    15  docker ps
    16  docker images
+###deploy httpd container
+ 21  docker container run --publish 82:80 --detach --name webhost httpd
+   22  docker
+   23  docker ps
