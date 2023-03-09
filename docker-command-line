@@ -7,3 +7,7 @@
  21  docker container run --publish 82:80 --detach --name webhost httpd
    22  docker
    23  docker ps
+###to verify from the command line
+27  curl localhost:82
+   28  curl localhost:81
+   29  curl localhost:80
