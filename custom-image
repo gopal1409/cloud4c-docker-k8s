@@ -11,3 +11,21 @@
    10  java -jar websocket-demo-0.0.1-SNAPSHOT.jar
 
 ####open port 8090 to access the app outside
+
+####how to convert the app into a custom docker image
+you need to be in the root folder and create a docker file
+
+ 12  cd ..
+
+ 15  nano dockerfile
+ ####inside the docker file add this instruction
+FROM openjdk
+COPY target/*.jar application.jar
+EXPOSE 8090
+ENTRYPOINT ["java","-jar","application.jar"]
+###then build the image
+ 16  docker build -t chatapp .
+   17  docker images
+####verify the writable layer
+ 19  docker image history 86f300121a41
+   20  docker run -d -p 88:8090 chatapp
